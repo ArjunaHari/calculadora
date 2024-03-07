@@ -9,16 +9,68 @@
             height: 500%;
         }
         img{
-            width: 100px;
+            width: 100%;
             height: 100px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            
+            padding: 10px;
+            
+        }
+        .grid-item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            
+        }
+        .grid-container1{
+            display: grid;
+            grid-template-columns: 100%;
+            padding: 10px;
+        }
+        .grid-item1{
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        main{
+            border: 1px solid black;
+            background-color: aqua;
         }
     </style>
     
 </head>
 <body>
-<img style="border: solid 2px black  ; " onclick="soma()" src="img/soma.png" alt="" >
-<img style="border: solid 2px black  ;" onclick="subtracao()" src="img/subtracao.jpg" alt="">
-<img style="border: solid 2px black  ;" onclick="divisao()" src="img/divisao.png" alt="">
-<img style="border: solid 2px black  ;" onclick="multiplicacao()" src="img/multiplicacao.png" alt="">   
+    <main>
+    <div class="grid-container1">
+        <div  class="grid-item1"><p id="resultado">0</p></div>
+    </div>
+    <div class="grid-container">
+        
+        <div class="grid-item" onclick="n1()">1</div>
+        <div class="grid-item" onclick="n2()">2</div>
+        <div class="grid-item" onclick="n3()">3</div>
+        <img style="border: solid 2px black  ; " onclick="soma()" src="img/soma.png" alt="" >  
+        <div class="grid-item" onclick="n4()">4</div>
+        <div class="grid-item" onclick="n5()">5</div>
+        <div class="grid-item" onclick="n6()">6</div>
+        <img style="border: solid 2px black  ;" onclick="subtracao()" src="img/subtracao.jpg" alt="">  
+        <div class="grid-item" onclick="n7()">7</div>
+        <div class="grid-item" onclick="n8()">8</div>
+        <div class="grid-item" onclick="n9()">9</div> 
+        <img style="border: solid 2px black  ;" onclick="divisao()" src="img/divisao.png" alt="">
+        <img style="border: solid 2px black  ;" onclick="reset()" src="img/c.png" alt="">
+        <img style="border: solid 2px black  ;" onclick="virgula()" src="img/virgula.jpg" alt="">
+        <img style="border: solid 2px black  ;" onclick="multiplicacao()" src="img/multiplicacao.png" alt=""> 
+        <img style="border: solid 2px black  ;" onclick="igual()" src="img/igual.jpg" alt="">
+      </div>
+    </main>
+   
 </body>
 </html>
